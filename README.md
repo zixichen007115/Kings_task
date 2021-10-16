@@ -26,6 +26,8 @@ extract features from images - cluster according to feature adn select images- t
 
 2.parameter influence
 
+![test_acc](https://github.com/zixichen007115/Kings_task/blob/main/cluster_acc.png "the acccurancy of every cluster number")
+
 3.best method and minimal number
 
 ## task2
