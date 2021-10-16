@@ -8,15 +8,36 @@ to >90% accuracy on the test set, using the smallest number of queries to this d
 You may use any combination of techniques you find suitable (supervised, self-supervised, unsupervised).
 However, using other datasets or pre-trained models is not allowed.
 
+### strategy:
+choose typical and various samples from dataset
+extract features from images - cluster according to feature adn select images- train a classifier
+
 ### method:
-1.random selection(baseline)
+1.random selection + CNN (baseline)
 
 2.PCA + KMEANS + CNN
 
 3.AE + KMEANS +CNN
 
 ### result:
-
 1.acc
 
 2.parameter influence
+
+3.best method and minimal number
+
+## task2
+### description: 
+Re-implement in Python the results presented in Example 6.6 of the Sutton & Barto book on page 132
+comparing SARSA and Q-learning in the cliff-walking task. Investigate the effect of choosing different values
+for the exploration parameter  for both methods. Present your code and results. In your discussion clearly
+describe the main difference between SARSA and Q-learning in relation to your findings.
+Note: For this problem, use 𝛼 = 0.1 and 𝛾 = 1 for both algorithms. The "smoothing" that is mentioned in the
+caption of Figure 6.4 is a result of 1) averaging over 10 runs, and 2) plotting a moving average over the last
+10 episodes.
+
+### result:
+reward plot
+
+### discussion:
+reward plot
