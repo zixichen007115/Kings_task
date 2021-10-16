@@ -41,7 +41,10 @@ caption of Figure 6.4 is a result of 1) averaging over 10 runs, and 2) plotting 
 10 episodes.
 
 ### result:
-reward plot
+
+![test_acc](https://github.com/zixichen007115/Kings_task/blob/main/reward.png "the acccurancy of every cluster number")
 
 ### discussion:
-reward plot
+Compared with SARAS, Q-learning uses the maximum of the following q, hence it is more positive and will ignore penalty caused by randomly stepping into the cliff.
+SARAS calcuates q by considering all possible future state, so state near the cliff is more dangerous.
+SARAS is on-policy since it will explore the state and update q, while Q-learning only update q based on greedy policy
