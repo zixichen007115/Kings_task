@@ -22,7 +22,7 @@ extract features from images - cluster according to feature adn select images- t
 ### result:
 1.acc
 
-![test_acc](https://github.com/zixichen007115/Kings_task/blob/main/Figure_1.png "the acccurancy of every method")
+![test_acc](https://github.com/zixichen007115/Kings_task/blob/main/method_acc.png "the acccurancy of every method")
 
 2.parameter influence
 
