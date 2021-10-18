@@ -19,6 +19,8 @@ extract features from images - cluster according to feature adn select images- t
 
 3.AE + KMEANS +CNN
 
+4.submodular active learning
+
 ### result:
 1.acc
 
