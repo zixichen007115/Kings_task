@@ -9,7 +9,7 @@ from torchvision import transforms as T
 from torchvision import datasets
 import numpy as np
 
-# input: first 600 samples in MNIST
+# input: first 500 samples in MNIST
 # output: test acc
 
 # CNN model
