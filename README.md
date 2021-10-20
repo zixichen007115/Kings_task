@@ -22,6 +22,8 @@ extract features from images - select images according to their features - train
 
 4.submodular active learning
 
+![diagram](https://github.com/zixichen007115/Kings_task/blob/main/diagram.png "diagram")
+
 ### result:
 1.acc
 
@@ -29,14 +31,14 @@ extract features from images - select images according to their features - train
 
 2.Kmeans parameter influence
 
-![test_acc](https://github.com/zixichen007115/Kings_task/blob/main/cluster_acc.png "the acccurancy of every cluster number")
+![cluster_acc](https://github.com/zixichen007115/Kings_task/blob/main/cluster_acc.png "the acccurancy of every cluster number")
 
 
 3.best method
 
 minimal number:350-400
 
-![test_acc](https://github.com/zixichen007115/Kings_task/blob/main/best.png "best method")
+![best](https://github.com/zixichen007115/Kings_task/blob/main/best.png "best method")
 
 ## task2
 ### description: 
