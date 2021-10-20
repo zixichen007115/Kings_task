@@ -47,10 +47,10 @@ class CNN(torch.nn.Module):
 
 # training parameters
 parser = argparse.ArgumentParser()
-parser.add_argument('--train_batch_size', type=int, default=12)
+parser.add_argument('--train_batch_size', type=int, default=10)
 parser.add_argument('--test_batch_size', type=int, default=200)
-parser.add_argument('--method', type=str, choices=['ae', 'pca'])
-parser.add_argument('--epochs', type=int, default=20)
+parser.add_argument('--method', type=str, choices=['ae', 'pca', 'ae++', 'pca++'])
+parser.add_argument('--epochs', type=int, default=10)
 parser.add_argument('--lr', type=float, default=0.001)
 config = parser.parse_args()
 print(config)
@@ -65,8 +65,17 @@ lr=config.lr
 # load dataset
 if method == 'pca':
     in_dataset = 'pca_samples.npy'
+    out_dataset = 'acc_pca.npy'
 elif method == 'ae':
     in_dataset = 'ae_samples.npy'
+    out_dataset = 'acc_ae.npy'
+elif method == 'pca++':
+    in_dataset = 'pca++_samples.npy'
+    out_dataset = 'acc_pca++.npy'
+elif method == 'ae++':
+    in_dataset = 'ae++_samples.npy'
+    out_dataset = 'acc_ae++.npy'
+
 
 train_sample_idx = np.load(in_dataset)
 train_sample_idx = train_sample_idx.flatten().astype(int)
@@ -102,6 +111,7 @@ loss_function = torch.nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(CNN.parameters(),lr=lr)
 
 # training process
+acc_list = np.empty(0)
 for epoch in range(epochs):
     trainning_loss = 0
     for i, (img, labels) in enumerate(train_loader):
@@ -126,3 +136,5 @@ for epoch in range(epochs):
                 pred = torch.argmax(output,dim=1)
                 acc=(float((pred==labels).sum())/float(labels.size(0))*1+acc*j)/(j+1)
             print("epoch:", epoch+1, "iteration:", i+1+epoch*50, "acc:%.4f" %acc)
+            acc_list = np.append(acc_list,acc)
+np.save(out_dataset,acc_list)
