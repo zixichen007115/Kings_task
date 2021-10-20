@@ -49,7 +49,7 @@ class CNN(torch.nn.Module):
 parser = argparse.ArgumentParser()
 parser.add_argument('--train_batch_size', type=int, default=12)
 parser.add_argument('--test_batch_size', type=int, default=200)
-parser.add_argument('--epochs', type=int, default=20)
+parser.add_argument('--epochs', type=int, default=10)
 parser.add_argument('--lr', type=float, default=0.001)
 config = parser.parse_args()
 print(config)
@@ -61,7 +61,7 @@ epochs=config.epochs
 lr=config.lr
 
 # load dataset
-train_sample_idx = np.arange(0,601)
+train_sample_idx = np.arange(0,500)
 np.random.shuffle(train_sample_idx)
 sampler_train = torch.utils.data.sampler.SubsetRandomSampler(train_sample_idx)
 
