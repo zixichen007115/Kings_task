@@ -10,6 +10,7 @@ However, using other datasets or pre-trained models is not allowed.
 
 ### strategy:
 choose typical and various samples from dataset
+
 extract features from images - cluster according to feature adn select images- train a classifier
 
 ### method:
