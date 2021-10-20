@@ -11,7 +11,7 @@ However, using other datasets or pre-trained models is not allowed.
 ### strategy:
 choose typical and various samples from dataset
 
-extract features from images - select images- train a classifier
+extract features from images - select images according to their features - train a classifier
 
 ### method:
 1.random selection + CNN (baseline)
