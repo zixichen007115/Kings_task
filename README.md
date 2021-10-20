@@ -26,11 +26,17 @@ extract features from images - cluster according to feature adn select images- t
 
 ![test_acc](https://github.com/zixichen007115/Kings_task/blob/main/method_acc.png "the acccurancy of every method")
 
-2.parameter influence
+2.Kmeans parameter influence
 
 ![test_acc](https://github.com/zixichen007115/Kings_task/blob/main/cluster_acc.png "the acccurancy of every cluster number")
 
-3.best method and minimal number
+3.incomplete dataset influence
+
+![test_acc](https://github.com/zixichen007115/Kings_task/blob/main/method_acc_incomplete.png "the acccurancy of every cluster number")
+
+4.best method and minimal number
+
+![test_acc](https://github.com/zixichen007115/Kings_task/blob/main/best.png "the acccurancy of every cluster number")
 
 ## task2
 ### description: 
