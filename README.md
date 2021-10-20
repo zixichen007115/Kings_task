@@ -30,11 +30,8 @@ extract features from images - cluster according to feature adn select images- t
 
 ![test_acc](https://github.com/zixichen007115/Kings_task/blob/main/cluster_acc.png "the acccurancy of every cluster number")
 
-3.incomplete dataset influence
 
-![test_acc](https://github.com/zixichen007115/Kings_task/blob/main/method_acc_incomplete.png "the acccurancy of every cluster number")
-
-4.best method
+3.best method
 
 minimal number:350-400
 
