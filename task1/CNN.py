@@ -9,7 +9,7 @@ from torchvision import transforms as T
 from torchvision import datasets
 import numpy as np
 
-# input: MNIST and typical data list(600)
+# input: MNIST and typical data list(500)
 # output: test acc
 
 # CNN model
