@@ -36,7 +36,7 @@ extract features from images - select images according to their features - train
 
 minimal number:350-400
 
-![test_acc](https://github.com/zixichen007115/Kings_task/blob/main/best.png "the acccurancy of every cluster number")
+![test_acc](https://github.com/zixichen007115/Kings_task/blob/main/best.png "best method")
 
 ## task2
 ### description: 
