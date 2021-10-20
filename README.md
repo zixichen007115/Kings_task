@@ -14,7 +14,7 @@ choose typical and various samples from dataset
 extract features from images - select images according to their features - train a classifier
 
 ### method:
-1.random selection + CNN (baseline) 500images
+1.(baseline) random selection + CNN 500images
 
 2.PCA + KMEANS + CNN
 
