@@ -52,7 +52,8 @@ caption of Figure 6.4 is a result of 1) averaging over 10 runs, and 2) plotting 
 
 ### result:
 
-![test_acc](https://github.com/zixichen007115/Kings_task/blob/main/reward.png "reward")
+![map](https://github.com/zixichen007115/Kings_task/blob/main/map.png "map")
+![reward](https://github.com/zixichen007115/Kings_task/blob/main/reward.png "reward")
 
 ### discussion:
 Compared with SARAS, Q-learning uses the maximum of the following q, hence it is more positive and will ignore penalty caused by randomly stepping into the cliff.
