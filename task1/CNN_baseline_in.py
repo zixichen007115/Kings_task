@@ -78,7 +78,7 @@ delect_list = np.empty(1).astype(int)
 for i, (_, labels) in enumerate(train_loader):
     for j in range(train_batch_size):
 
-        if labels[j]<2 and np.random.uniform()<0.9:
+        if labels[j]<1 and np.random.uniform()<0.9:
             delect_list = np.append(delect_list, i*train_batch_size+j)
 
 train_sample_idx = np.arange(60000)
