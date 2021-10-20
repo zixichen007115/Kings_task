@@ -11,7 +11,7 @@ from torch.autograd import Variable
 import numpy as np
 
 # input:  feature (dim*n)_*60000
-# output: typical data (600)
+# output: typical data (500)
 
 class KMEANS:
     def __init__(self,device):
