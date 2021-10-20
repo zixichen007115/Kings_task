@@ -52,7 +52,7 @@ caption of Figure 6.4 is a result of 1) averaging over 10 runs, and 2) plotting 
 
 ### result:
 
-![map](https://github.com/zixichen007115/Kings_task/blob/main/map.png "map")
+![map](https://github.com/zixichen007115/Kings_task/blob/main/map.jpg "map")
 ![reward](https://github.com/zixichen007115/Kings_task/blob/main/reward.png "reward")
 
 ### discussion:
