@@ -20,7 +20,7 @@ extract features from images - select images according to their features - train
 
 3.AE + KMEANS +CNN
 
-4.submodular active learning
+4.submodular active learning[1]
 
 ![diagram](https://github.com/zixichen007115/Kings_task/blob/main/diagram.png "diagram")
 
@@ -61,3 +61,6 @@ Compared with SARAS, Q-learning uses the maximum of the following q, hence it is
 SARAS calcuates q by deciding actions first, which means it will consider all available future states, so state near the cliff is more dangerous.
 
 SARAS is on-policy since it will explore the state and update q, while Q-learning only update q based on greedy policy before deciding actions.
+
+## Bibliography
+[1] Kaushal V, Sahoo A, Doctor K, et al. Learning from less data: Diversified subset selection and active learning in image classification tasks[J]. arXiv preprint arXiv:1805.11191, 2018.
